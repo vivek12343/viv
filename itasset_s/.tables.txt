@@ -1,0 +1,77 @@
+\\It Assets Databases\\
+*Queries related to the creation of all tables*
+
+create table agent(agent_name varchar(40),pwd varchar(30),edu varchar(50),email varchar(50),contact varchar(40),skills varchar(100),city varchar(50),exp varchar(50),id int(11) primary key auto_increment,longitude varchar(100),lattitude varchar(100),pic varchar(200));
+
+create table answer
+(
+QID int(11) primary key auto_increment,
+email varchar(50),
+Answer varchar(3000),
+date varchar(50)
+);
+
+create table completedtask(email varchar(50),id int(11) primary key auto_increment);
+
+create table product
+(
+pname varchar(50),
+price varchar(60),
+color varchar(100),
+pic varchar(200),
+id int(11) primary key auto_increment
+);
+
+create table question
+(
+Qid int(11) primary key auto_increment,
+email varchar(50),
+question varchar(1000),
+details varchar(2500),
+date varchar(40),
+Totans varchar(70)
+);
+
+create table register
+(uname varchar(50),pwd varchar(60),dname varchar(50),email varchar(50),contact varchar(40),issue varchar(50),city varchar(50),issue_type varchar(100),sques varchar(50),sans varchar(50));
+
+create table reqform
+(
+uname varchar(50),
+email varchar(50),
+contact varchar(50),
+issue varchar(200),
+city varchar(50),
+issue_type varchar(100),
+id int(11) primary key auto_increment,
+address varchar(100)
+);
+
+create table services
+(
+stype varchar(50),
+sname varchar(50),
+price varchar(50),
+detail varchar(200)
+);
+
+create table subscribe
+(
+email varchar(50)
+);
+
+create table work 
+(
+email varchar(100),
+id int(11)  primary key auto_increment
+);
+
+create table feedback
+(
+uname varchar(50)
+mnum varchar(50)
+ros varchar(50)
+cmts varchar(100)
+);
+
+

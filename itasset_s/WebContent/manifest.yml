@@ -1,0 +1,9 @@
+---
+applications:
+- path: target/vivek.war
+  memory: 256M
+  instances: 1
+  domain: eu-gb.mybluemix.net
+  name: vivekJavaApp
+  host: vivekJavaApp
+  disk_quota: 256M
